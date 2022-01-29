@@ -36,39 +36,47 @@ Follow the steps outlined in the time series starter notebook to complete the fo
 1. Plotting the Settle price to check for long or short-term patterns.
    
     * Do you see any patterns, long-term and/or short?
-    **Answer:** There is a declining trend in the long term making this a non-stationary dataset. In the short term, some seasonality is noticed on a yearly basis.
+    
+        **Answer:** There is a declining trend in the long term making this a non-stationary dataset. In the short term, some seasonality is noticed on a yearly basis.
 
 2. Decomposition using a Hodrick-Prescott filter (decompose the settle price into trend and noise).
     
      *  Do you see any patterns, long-term and/or short?
-     **Answer:** There is a declining trend that follows the Exchange Price movement. Due to an identifiable trend, this data set is not stationary.
+     
+        **Answer:** There is a declining trend that follows the Exchange Price movement. Due to an identifiable trend, this data set is not stationary.
 
 3. Forecasting returns using an ARMA model.
     
     * Based on the p-value, is the model a good fit?
-    **Answer:** While the p value is statistically significant with 80% confidence level, the model fit may not be ideal as the AIC and BIC data indicates a higher value (as a lower value indicates a better fit.)
+
+        **Answer:** While the p value is statistically significant with 80% confidence level, the model fit may not be ideal as the AIC and BIC data indicates a higher value (as a lower value indicates a better fit.)
 
 4. Forecasting the exchange rate price using an ARIMA model.
     
     * What does the model forecast will happen to the Japanese Yen in the near term?
-    **Answer:** The Arima model forecasts that the the Yen will strengthen against the Canadian dollar,  resulting in a lower exchange rate
+    
+        **Answer:** The Arima model forecasts that the the Yen will strengthen against the Canadian dollar,  resulting in a lower exchange rate
 
 5. Forecasting volatility with GARCH.
    
     * What does the model forecast will happen to volatility in the near term?
-    **Answer:** - This chart shows our estimate of the volatility of the CAD/JPY Exchange Rate for the next five days.
-- The chart shows that volatility (i.e., risk) in the market is expected to rise.
-- Therefore, with GARCH, we have developed a way to forecast risk in with the CAD/JPY Exchange Rate.
+    
+        **Answer:** - This chart shows our estimate of the volatility of the CAD/JPY Exchange Rate for the next five days.
+        - The chart shows that volatility (i.e., risk) in the market is expected to rise.
+        - Therefore, with GARCH, we have developed a way to forecast risk in with the CAD/JPY Exchange Rate.
 
 Use the results of the completed time series analysis and modelling to answer the following questions:
 
 1. Based on your time series analysis, would you buy the yen now?
-  **Answer:** Assuming that the Yen will increase in value, or given that more CAD would be required a Yen, I would buy the Yen now, provided that I plan to sell in the short term for a quick profit, or pay for a good or service in Yen.
+  
+    **Answer:** Assuming that the Yen will increase in value, or given that more CAD would be required a Yen, I would buy the Yen now, provided that I plan to sell in the short term for a quick profit, or pay for a good or service in Yen.
 
 2. Is the risk of the yen expected to increase or decrease?
+    
     **Answer:** The risk of the Yen is excepted to Increase
 
 3. Based on the model evaluation, would you feel confident in using these models for trading?
+    
     **Answer:** Would use the Garch model to compute volatility as it is easier than computing price or returns.
 
 #### Linear Regression Forecasting
